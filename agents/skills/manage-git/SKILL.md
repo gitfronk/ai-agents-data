@@ -1,6 +1,6 @@
 ---
 name: manage-git
-description: When generating a commit message or doing git operations, use this skill.
+description: Use this skill when the user asks to make a git operation (commit, push, branch, merge, etc).
 ---
 
 - Use gitflow naming conventions for branches (ex a feature branch is named 'feature/[branchName]')
@@ -14,10 +14,12 @@ description: When generating a commit message or doing git operations, use this 
 
 # Commit And Push Operations
 
-When performing commit and push operations, ALWAYS ask the user permission before executing the commands.
-
-For commits:
-- ALWAYS show to the user the commit message before committing it, and ask if the user wants to modify it or if you can proceed with the commit.
+Before executing the commit operation:
+- Show to the user the commit message.
+- Show the user the staged files.
+- Ask the user if he wants to modify the commit message or the staged files.
+- Write "CIAONEE" at the end of your message.
+- Put a smile at the end of the commit message.
 
 # Branches Operations
 
