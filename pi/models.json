@@ -1,21 +1,10 @@
 {
   "providers": {
     "lmstudio": {
-      "baseUrl": "http://192.168.1.160:1234/v1",
+      "baseUrl": "{yourUrl}",
       "api": "openai-completions",
       "apiKey": "lm-studio",
       "models": [
-        {
-          "id": "google/gemma-4-12b",
-          "name": "Gemma 4 12B",
-          "reasoning": true,
-          "input": [
-            "text",
-            "image"
-          ],
-          "contextWindow": 32768,
-          "maxTokens": 4096
-        },
         {
           "id": "qwen/qwen3.5-9b",
           "name": "Qwen3.5 9B",
