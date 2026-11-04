@@ -2,5 +2,5 @@
   "lastChangelogVersion": "1.5.0",
   "hideThinkingBlock": false,
   "defaultProvider": "lmstudio",
-  "defaultModel": "google/gemma-4-12b"
+  "defaultModel": "qwen/qwen3.5-9b"
 }
