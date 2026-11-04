@@ -7,10 +7,10 @@ description: When generating a commit message or doing git operations, use this 
 
 # Commit Messages Format
 
-- Write a single-line message under 80 characters with no dot at the end and first letter uppercase.
-- Add bullet point list of more details on what has changed and add a dot at the end of each entry.
+- Write a single-line commit message title under 80 characters with no dot at the end and first letter uppercase.
+- Only if the bullet list is not a simple repetition of the commit message title, add a bullet point list of more details on what has changed. Each bullet point entry should end with a dot.
 - Use imperative mood.
-- Consider all the changed staged files to create the commit message.
+- Consider all the changes in staged files to create the commit message.
 
 # Commit And Push Operations
 
