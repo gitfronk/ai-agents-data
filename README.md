@@ -5,8 +5,14 @@
 - [Project Purpose](#project-purpose)
 - [Project Structure](#project-structure)
 - [Extensions](#extensions)
+  - [git-hooks.ts](#git-hooks.ts)
+  - [plan-mode.ts](#plan-mode.ts)
 - [Skills](#skills)
+  - [ensure-unity-guidelines](#ensure-unity-guidelines)
+  - [manage-git](#manage-git)
 - [Pi Agent Configurations](#pi-agent-configurations)
+  - [models.json](#models.json)
+  - [settings.json](#settings.json)
 
 ## Project Purpose
 
