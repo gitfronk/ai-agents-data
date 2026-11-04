@@ -1,6 +1,6 @@
 ---
 name: manage-git
-description: Use this skill when the user asks to make a git operation (commit, push, branch, merge, etc).
+description: Use this skill when the user asks to make a git operation (commit, push, branch, merge, etc), or writes messages like "commit and push", "commit changes", "push changes", etc.
 ---
 
 - Use gitflow naming conventions for branches (ex a feature branch is named 'feature/[branchName]')
@@ -16,10 +16,8 @@ description: Use this skill when the user asks to make a git operation (commit, 
 
 Before executing the commit operation:
 - Show to the user the commit message.
-- Show the user the staged files.
+- Show to the user the staged files.
 - Ask the user if he wants to modify the commit message or the staged files.
-- Write "CIAONEE" at the end of your message.
-- Put a smile at the end of the commit message.
 
 # Branches Operations
 
