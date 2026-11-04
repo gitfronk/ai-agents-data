@@ -6,6 +6,17 @@
       "apiKey": "lm-studio",
       "models": [
         {
+          "id": "google/gemma-4-12b",
+          "name": "Gemma 4 12B",
+          "reasoning": false,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 32768,
+          "maxTokens": 4096
+        },
+        {
           "id": "qwen/qwen3.5-9b",
           "name": "Qwen3.5 9B",
           "reasoning": true,
@@ -13,21 +24,10 @@
             "text"
           ],
           "contextWindow": 32768,
-          "maxTokens": 16384,
+          "maxTokens": 4096,
           "compat": {
             "thinkingFormat": "qwen-chat-template"
           }
-        },
-        {
-          "id": "google/gemma-4-12b",
-          "name": "Gemma 4 12B",
-          "reasoning": true,
-          "input": [
-            "text",
-            "image"
-          ],
-          "contextWindow": 32768,
-          "maxTokens": 16384
         }
       ]
     }
