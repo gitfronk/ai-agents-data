@@ -1,5 +1,13 @@
 # AI Agents Data
 
+## Table of Contents
+
+- [Project Purpose](#project-purpose)
+- [Project Structure](#project-structure)
+- [Extensions](#extensions)
+- [Skills](#skills)
+- [Pi Agent Configurations](#pi-agent-configurations)
+
 ## Project Purpose
 
 This repository contains lightweight skills, extensions, and other data for AI harnesses to use.
@@ -15,25 +23,6 @@ In this project you could find some "personal" settings, like the `models.json` 
 Every file is either hand-written or AI-generated and reviewed by me. Be aware that I am not a typescript programmer, so I do my best to review the extensions, and I am pretty confident they do not have security issues, but errors may be there, so be careful.
 
 This readme file may not always be up-to-date but I will do my best to document my work here.
-
-## Project Structure
-
-```
-ai-agents-data/
-├── extensions/           
-│   ├── git-hooks.ts      
-│   └── plan-mode.ts      
-├── pi/                   
-│   ├── models.json       
-│   └── settings.json     
-└── skills/               
-    ├── ensure-unity-guidelines/
-    │   └── SKILL.md
-    ├── manage-git/
-    │   └── SKILL.md
-    └── update-readme
-        └── SKILL.md
-```
 
 ## Extensions
 
