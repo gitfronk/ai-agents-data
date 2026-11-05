@@ -15,7 +15,7 @@ export default function (pi: ExtensionAPI) {
                     if (modifyInstructions) return { block: true, reason: `The user did not approve the command '${event.input.command}' and asked for the following changes: '${modifyInstructions}'. Apply them and try again.` };
                 }
 
-                return { cancel: true };
+                return { block: true, reason: `The user cancelled the command '${event.input.command}'. Do not retry unless asked.` };
             }
         }
     });
