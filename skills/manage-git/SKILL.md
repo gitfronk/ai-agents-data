@@ -3,6 +3,10 @@ name: manage-git
 description: Use this skill when the user asks to make a git operation (commit, push, branch, merge, etc). Example messages that should trigger this extension are "commit and push", "commit changes", "push changes", "create branch [branchName]", etc.
 ---
 
+# General Rules
+
+- If the user only asks to commit changes, DO NOT push them also.
+
 # Commit Messages Format
 
 - Write a single-line commit message title under 80 characters with no dot at the end and first letter uppercase.
