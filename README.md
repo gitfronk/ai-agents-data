@@ -5,18 +5,19 @@
 - [Project Purpose](#project-purpose)
 - [Project Structure](#project-structure)
 - [Extensions](#extensions)
-  - [git-hooks.ts](#git-hooks.ts)
-  - [plan-mode.ts](#plan-mode.ts)
+  - [git-gate.ts](#git-gate)
+  - [plan-mode.ts](#plan-mode)
 - [Skills](#skills)
   - [ensure-unity-guidelines](#ensure-unity-guidelines)
   - [manage-git](#manage-git)
+  - [update-readme](#update-readme)
 - [Pi Agent Configurations](#pi-agent-configurations)
   - [models.json](#models.json)
   - [settings.json](#settings.json)
 
 ## Project Purpose
 
-This repository contains lightweight skills, extensions, and other data for AI agents to use.
+This repository contains lightweight skills, extensions and other data for AI agents to use.
 
 The project has been created with the following purposes in mind:
 - Help working with local LLMs, especially on low and very low memory computers (I'm currently testing on a Macbook Pro M1 16GB).
@@ -34,13 +35,13 @@ This readme file may not always be up-to-date but I will do my best to document 
 
 ## Extensions
 
-### git-hooks.ts
+### git-gate
 
-Git operation approval hooks for commit, push, and branch operations. The extension monitors **bash** commands and prompts the user to approve, modify, or cancel Git operations before executing them.
+Git operation approval for bash commands. The extension intercepts `git commit` and `git push` commands and prompts the user to **Approve**, **Modify**, or **Cancel**. If the user chooses to modify, they can provide instructions that are appended to the command. This prevents accidental commits and pushes.
 
-### plan-mode.ts
+### plan-mode
 
-Read-only mode that allows the agent to explore the codebase and describe changes without actually modifying files or running shell commands. Only safe tools (`read`, `grep`, `find`, `ls`) are active while mutating tools (`write`, `edit`, `bash`) are blocked. Useful for previewing changes before committing.
+Read-only mode that allows the agent to explore the codebase and describe changes without actually modifying files or running shell commands. Only safe tools (**read**, **grep**, **find**, **ls**) are active while mutating tools (**write**, **edit**, **bash**) are blocked. Useful for previewing changes before committing.
 
 ## Skills
 
@@ -52,7 +53,26 @@ Ensures Unity projects coding guidelines are followed. Defines formatting and do
 
 Manages Git operations and enforces commit message formatting guidelines.
 
+### update-readme
+
+Automatically maintains and updates the `README.md` file by scanning the project structure and generating documentation that follows the existing formatting conventions.
+
 ## Pi Agent Configurations
 
 - **models.json**: Configuration for available AI models and their settings.
 - **settings.json**: General settings.
+
+## Tree View
+
+```tree
+ai-agents-data/
+├── README.md
+└── skills/
+    ├── ensure-unity-guidelines/
+    │   └── SKILL.md
+    ├── manage-git/
+    │   └── SKILL.md
+    └── update-readme/
+        └── SKILL.md
+
+> **Note:** Extensions (`git-gate.ts`, `plan-mode.ts`) are located in the parent directory at `~/.pi/agent/extensions/`
